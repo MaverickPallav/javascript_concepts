@@ -1,0 +1,15 @@
+{
+  "name": "javascript_concepts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apply_call_bind.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.21.0"
+  }
+}
