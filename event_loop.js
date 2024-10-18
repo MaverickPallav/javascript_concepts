@@ -15,7 +15,7 @@ console.log("End")
 // WEB APis
 // * set Timeout ().
 // * DOM APIS
-// * fetchc)
+// * fetch()
 // * local Storage
 // * console
 // * Location
