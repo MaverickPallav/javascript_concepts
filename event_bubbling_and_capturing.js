@@ -16,7 +16,6 @@
     // onClickParent()
     // onClickGrandParent()
 
-
 // Top to Bottom Execution - Event Capturing - Also known as event trickling
 
 // When we click the child button
