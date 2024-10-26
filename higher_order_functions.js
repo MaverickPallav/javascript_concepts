@@ -78,7 +78,7 @@ console.log(radiuses.map(area))
 Array.prototype.calculate = function (logic) { // Own implementation of Map, this function calculate will be available on all Arrays
     const output = []
 
-    for (let i = 0; i < this.length; i++){
+    for (let i = 0; i < this.length; i++){ // this is the array here
         output.push(logic(this[i]))
     }
     return output
