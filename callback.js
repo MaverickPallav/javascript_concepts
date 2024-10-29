@@ -2,8 +2,6 @@
 // The function which you pass into another function is known as the callback function
 // Callback function gives ous access to the asynchronus world in a synchronus single threaded language
 
-const { application } = require("express")
-
 setTimeout(function () {
     console.log("Timer")
 }, 5000) // the callback function is stored and a timer of 5000 ms is set to execute later

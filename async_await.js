@@ -46,7 +46,7 @@ const p = new Promise((resolve, reject) => {
     // how do we handle this using async await ?
 
     async function handlePromise() {
-        const val = await p // use await in front of the promise and it resolves the promise
+        const val = await p // use await in front of the promise and it waits for the promise to settle
         console.log(val)
     }
 
@@ -86,7 +86,7 @@ const p2 = new Promise((resolve, reject) => {
 // handlePromise1()
 
 // Hello World!!
-// (here the program waited for promise to be resolved)
+// (here the program waited for promise to be settled)
 // Namaste JavaScript 
 // Promise Resolved Value!!
 
@@ -130,10 +130,10 @@ handlePromise2()
 // Empty (call stack)
 // handlePromise() (enters call stack)
 // "Hello World" printed
-// encounters await p1 and handlePromise() leaves callStack, it will not block the main thread, it will wait for p1 to be resolved
+// encounters await p1 and handlePromise() leaves callStack, it will not block the main thread, it will wait for p1 to be settled
 // After 5 sec, hanldePromise() will again come into callstack, and start executing code from where it left
 // Namaste Javascript, and val1 is printed
-// encounter await p2 and handlePromise() leaves callStack, it will not block the main thread, it will wait for p2 to be resolved
+// encounter await p2 and handlePromise() leaves callStack, it will not block the main thread, it will wait for p2 to be settled
 // After 5 sec, hanldePromise() will again come into callstack, and start executing code from where it left
 // Namaste Javascript, and val2 is printed
 
@@ -146,10 +146,10 @@ handlePromise2()
 // Empty(call stack)
 // handlePromise() (enters call stack)
 // "Hello World" printed
-// encounters await p1 and handlePromise() leaves callStack, it will not block the main thread, it will wait for p1 to be resolved
+// encounters await p1 and handlePromise() leaves callStack, it will not block the main thread, it will wait for p1 to be settled
 // after 10 sec, hanldePromise() will again come into callstack, and start executing code from where it left
 // Namaste Javascript, and val1 is printed
-// encounter await p1 and handlePromise() leaves callStack, it will not block the main thread, p2 here is already resolved so no waiting
+// encounter await p1 and handlePromise() leaves callStack, it will not block the main thread, p2 here is already settled so no waiting
 // hanldePromise() will again come into callstack, and start executing code from where it left
 // Namaste Javascript, and val2 is printed
 
