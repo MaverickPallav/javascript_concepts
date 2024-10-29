@@ -1,8 +1,6 @@
 // * What is async ?
     // async function always return a promise
 
-const { json } = require("express")
-
     async function getData(){
         return new Promise((resolve, reject) => { // here the return value is already a promise so it will not wrap inside a promise
             resolve("Done")
